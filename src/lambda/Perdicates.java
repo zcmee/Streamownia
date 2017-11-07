@@ -32,6 +32,11 @@ class Book {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" + "name=" + name + ", price=" + price + '}';
+    }
+
 }
 
 public class Perdicates {
@@ -64,4 +69,6 @@ public class Perdicates {
     private static void bestBook(Book book) {
         if(isBookExpensive.negate().and(isNameGood).test(book)) System.out.println("Książka " + book.getName() + "jest najlepsza na świecie.");
     }
+    
+    
 }
