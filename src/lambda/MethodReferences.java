@@ -6,11 +6,23 @@ import java.util.function.Function;
  *
  * @author Adam Bryksy
  */
+
+
+class UPPEROWNIK {
+    
+    static String getFirst(String element) {
+        return String.valueOf(element.charAt(0));
+    } 
+    
+}
+
 public class MethodReferences {
     static Function<String, String> toLower = s -> s.toLowerCase();
     static Function<String, String> toLowerRef = String::toLowerCase;
     
-//    static Function<Book, String> toLowerBook = Book::getName;
+    static Function<Book, String> firstCharNormal = b -> b.getName().toLowerCase();
+    
+    static Function<String, String> firstChar = UPPEROWNIK::getFirst;
     
     public static void main(String[] args) {
         BookCreator creatNew = Book::new;
@@ -24,6 +36,10 @@ public class MethodReferences {
         System.out.println("toLoverREF:");
         System.out.println(toLower.apply("Yondaimee"));
         System.out.println(toLower.apply("adam"));
+        System.out.println("!!! OSTATNII ROZPIERDOLL !!!");
+        
+        System.out.println(firstChar.apply("Yondaimee"));
+        
     }
     
 }
