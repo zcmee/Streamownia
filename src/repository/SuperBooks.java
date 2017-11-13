@@ -18,6 +18,7 @@ public class SuperBooks {
             new SuperBook(29.99,  "Pasja", "twarda", true),
             new SuperBook(29.99,  "Pasja", "twarda", true),
             new SuperBook(199.99, "Bajki", "twarda", true),
+            new SuperBook(100.00, "Vat zaPan Brat", "twarda", true),
             new SuperBook(19.99,  "Żarty programistów", "miękka", true));
         
         SuperBook sb = new SuperBook(49.99,  "Pani jeziora", "miękka", true);

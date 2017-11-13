@@ -11,6 +11,11 @@ import java.util.function.Supplier;
 public class StreamSuperBooks {
     private final static Supplier<Exception> bookNotFound = () -> new IllegalArgumentException("Required book bot found");
     
+    
+    public void showAllBooks(List<SuperBook> list) {
+        list.stream().forEach(System.out::println);
+    }
+    
     public void showPromotedBooks(List<SuperBook> list) {
         list.stream()
                 .filter(v -> v.isIsPromotion())
@@ -29,6 +34,12 @@ public class StreamSuperBooks {
                 .filter(v -> v.getPrice().equals(price))
                 .findFirst()
                 .orElseThrow(bookNotFound);
+    }
+    
+    public void showAllPrices(List<SuperBook> list) {
+        list.stream()
+            .map(SuperBook::getPrice)
+            .forEach(System.out::println);
     }
 
 }
