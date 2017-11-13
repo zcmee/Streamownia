@@ -1,5 +1,6 @@
 package lambda;
 
+import api.Book;
 import java.util.function.Predicate;
 
 /**

@@ -1,43 +1,12 @@
 package lambda;
 
+import api.Book;
 import java.util.function.Predicate;
 
 /**
  *
  * @author Adam
  */
-
-class Book {
-    private String name;
-    private Double price;
-
-    public Book(String name, Double price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Book{" + "name=" + name + ", price=" + price + '}';
-    }
-
-}
 
 public class Perdicates {
     static Predicate<Book> isBookExpensive = (book) -> book.getPrice() > 9.99;

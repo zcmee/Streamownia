@@ -1,4 +1,4 @@
-package streams;
+package stream.tutorialzacznijprog;
 
 import api.Pair;
 import java.util.ArrayList;

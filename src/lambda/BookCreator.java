@@ -1,5 +1,7 @@
 package lambda;
 
+import api.Book;
+
 /**
  *
  * @author Adam
