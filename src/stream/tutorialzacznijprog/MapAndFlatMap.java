@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package stream.tutorialzacznijprog;
 
 import api.SuperBook;
 import java.util.List;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -25,6 +21,19 @@ public class MapAndFlatMap {
         list.stream()
             .map(bookWithTax)
             .forEach(System.out::println);
+    }
+    
+    public List<SuperBook> chaneListOfListToSingleList (List<List<SuperBook>> lists) {
+        return lists.stream()
+             .flatMap(lb -> lb.stream())
+             .collect(Collectors.toList());
+    }
+    
+    public List<SuperBook> changeListOfListToSingleListOfUniqueBooks(List<List<SuperBook>> lists) {
+        return lists.stream()
+                    .flatMap(lb -> lb.stream())
+                    .distinct()
+                    .collect(Collectors.toList());
     }
     
     

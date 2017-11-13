@@ -12,7 +12,7 @@ public class StreamSuperBooks {
     private final static Supplier<Exception> bookNotFound = () -> new IllegalArgumentException("Required book bot found");
     
     
-    public void showAllBooks(List<SuperBook> list) {
+    public static void showAllBooks(List<SuperBook> list) {
         list.stream().forEach(System.out::println);
     }
     
