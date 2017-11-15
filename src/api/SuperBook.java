@@ -61,5 +61,10 @@ public class SuperBook extends Book{
         
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "SuperBook{" + "cover=" + cover + ", isPromotion=" + isPromotion + '}';
+    }
     
 }

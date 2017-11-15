@@ -25,11 +25,18 @@ public class MapAndFlatMap {
     
     public List<SuperBook> chaneListOfListToSingleList (List<List<SuperBook>> lists) {
         return lists.stream()
-             .flatMap(lb -> lb.stream())
-             .collect(Collectors.toList());
+                    .flatMap(lb -> lb.stream())
+                    .collect(Collectors.toList());
     }
     
     public List<SuperBook> changeListOfListToSingleListOfUniqueBooks(List<List<SuperBook>> lists) {
+        return lists.stream()
+                    .flatMap(lb -> lb.stream())
+                    .distinct()
+                    .collect(Collectors.toList());
+    }
+    
+    public List<SuperBook> isExistsExpensiveBooks(List<List<SuperBook>> lists) {
         return lists.stream()
                     .flatMap(lb -> lb.stream())
                     .distinct()

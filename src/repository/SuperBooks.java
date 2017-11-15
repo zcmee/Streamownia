@@ -21,9 +21,6 @@ public class SuperBooks {
             new SuperBook(100.00, "Vat zaPan Brat", "twarda", true),
             new SuperBook(19.99,  "Żarty programistów", "miękka", true));
         
-        SuperBook sb = new SuperBook(49.99,  "Pani jeziora", "miękka", true);
-        SuperBook sb2 =new SuperBook(19.99,  "PHP w akcji", "miękka", false);
-        
         return listBooks;
     }
     
