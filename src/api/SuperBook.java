@@ -64,7 +64,7 @@ public class SuperBook extends Book{
 
     @Override
     public String toString() {
-        return "SuperBook{" + "cover=" + cover + ", isPromotion=" + isPromotion + '}';
+        return "SuperBook{" + "name=" + super.getName()  + ", cover=" + cover + ", isPromotion=" + isPromotion + '}';
     }
     
 }
