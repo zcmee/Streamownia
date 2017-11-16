@@ -6,7 +6,7 @@ import static repository.SuperBooks.getListBooks;
 
 /**
  *
- * @author Adam Bryksy
+ * @author Adam
  */
 
 public class Streamcz1Test {

@@ -7,7 +7,7 @@ import java.util.function.BiFunction;
 
 /**
  *
- * @author Adam Bryksy
+ * @author Adam
  */
 
 

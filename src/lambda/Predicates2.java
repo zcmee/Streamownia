@@ -5,7 +5,7 @@ import java.util.function.BiPredicate;
 
 /**
  *
- * @author Adam Bryksy
+ * @author Adam
  */
 
 class Cock {
@@ -31,7 +31,7 @@ public class Predicates2 {
     public static void main(String[] args) {
         Book book1 = new Book("Mały kujon", 3.99d);
         Book book2 = new Book("Nintendo", 12.8d);
-        Book book3 = new Book("Adam Bryksy To Geniusz zła", 2.15d);
+        Book book3 = new Book("Adam Maryński To Geniusz zła", 2.15d);
         Cock cock1 = new Cock(2.15d);
         Cock cock2 = new Cock(3.99d);
         

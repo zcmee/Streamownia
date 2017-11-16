@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  *
- * @author Adam Bryksy
+ * @author Adam
  */
 public class MapAndFlatMap {
     private final static Function<SuperBook, Double> bookWithTax = (book) -> book.getPrice() + (book.getPrice() * (23d/100d));
