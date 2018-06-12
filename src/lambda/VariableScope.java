@@ -11,14 +11,15 @@ import java.util.function.Predicate;
 public class VariableScope {
     static Book bookChip = new Book("Mały kujon", 3.99d);
     static Book bookExpensive = new Book("Mały kujon", 1234d);
-    static double maxPriceStatic = 11;
+    double maxPriceGlobal = 11;
     
-    static void testLocalScope() {
-        double maxPrice = 30.0d;
+    void testLocalScope() {
+        double maxPriceLocale = 30.0d;
         Predicate<Book> isPriceOnion = book -> {
-
-            maxPriceStatic = 149d;
-            return book.getPrice() > maxPrice;
+//            maxPriceLocale = 13.34d;
+            maxPriceGlobal = 149d;
+            
+            return book.getPrice() > maxPriceGlobal;
         };
         
         System.out.println(isPriceOnion.test(bookChip));
@@ -26,7 +27,8 @@ public class VariableScope {
     }
     
     public static void main(String[] args) {
-        testLocalScope();
+        VariableScope vs = new VariableScope();
+        vs.testLocalScope();
     }
     
 }
